@@ -13,15 +13,15 @@ public class Dictionary {
 
         try {
             // TEST MODE
-            BufferedReader reader = new BufferedReader(
+            /*BufferedReader reader = new BufferedReader(
                     new FileReader("src/main/resources/words-Testing.txt"));
             BufferedWriter writer = new BufferedWriter(
-                    new FileWriter("src/main/resources/words-Testing-Transformed"));
+                    new FileWriter("src/main/resources/words-Testing-Transformed"));*/
             //Production
-/*            BufferedReader reader = new BufferedReader(
+            BufferedReader reader = new BufferedReader(
                     new FileReader("src/main/resources/words.txt"));
             BufferedWriter writer = new BufferedWriter(
-                    new FileWriter("src/main/resources/words_cleaned.txt"));*/
+                    new FileWriter("src/main/resources/words_cleaned.txt"));
 
             while ((word = reader.readLine()) != null) {
                 if (word.contains(".") ||
