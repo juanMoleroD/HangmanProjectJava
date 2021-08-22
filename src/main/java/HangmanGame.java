@@ -14,6 +14,8 @@ public class HangmanGame {
     //Functions for the game
 
     public String chooseWord(){
+
+
         wordSelected = "test";
         return wordSelected;
     }
@@ -118,6 +120,7 @@ public class HangmanGame {
     public static void main(String[] args) {
         HangmanGame gameInstance = new HangmanGame();
         gameInstance.startGame();
+
 
     }
 
