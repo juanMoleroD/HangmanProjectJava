@@ -1,6 +1,9 @@
 import java.sql.SQLOutput;
 import java.util.*;
 
+import static dictionary.Dictionary.chooseRandomWord;
+import static dictionary.Dictionary.cleanDictionary;
+
 
 public class HangmanGame {
 
@@ -13,11 +16,9 @@ public class HangmanGame {
 
     //Functions for the game
 
-    public String chooseWord(){
-
-
-        wordSelected = "test";
-        return wordSelected;
+    public void chooseWord(){
+        this.wordSelected = chooseRandomWord(cleanDictionary());
+//        System.out.println(wordSelected); // DEBUG
     }
 
     public String generateShell(){
@@ -87,6 +88,7 @@ public class HangmanGame {
         this.chooseWord();
 
         this.generateShell();
+        System.out.println(wordShell);
 
         this.wordSelectedFound = false;
 

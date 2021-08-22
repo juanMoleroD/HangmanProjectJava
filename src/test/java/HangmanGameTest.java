@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class HangmanGameTest {
 
-    HangmanGame HangmanGameInstance;
+/*    HangmanGame HangmanGameInstance;
 
     @BeforeEach
     void setUp() {
@@ -23,7 +23,7 @@ class HangmanGameTest {
     @DisplayName("testing word selected")
     void wordSelectorTest() {
 
-    }
+    }*/
 
 }
 
