@@ -73,13 +73,13 @@ public class HangmanGame {
         attempts = 0;
         letterGuesses.clear();
 
-        this.chooseWord();
-        this.generateShell();
-        this.wordSelectedFound = false;
+        chooseWord();
+        generateShell();
+        wordSelectedFound = false;
 
         System.out.println(wordShell);
 
-        while (!this.wordSelectedFound){
+        while (!wordSelectedFound){
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter a letter");
             String playerGuess = sc.nextLine();System.out.println();
@@ -91,7 +91,7 @@ public class HangmanGame {
             System.out.println(wordShell);
             System.out.println("Total Guesses : " + attempts);
             System.out.println("Letters attempted: " + letterGuesses.toString() + "\n");
-            this.allLettersGuessed();
+            allLettersGuessed();
 
             //  Debug
 /*            System.out.println( "Word has been found? - " + this.wordSelectedFound);
