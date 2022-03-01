@@ -82,7 +82,8 @@ public class HangmanGame {
         while (!wordSelectedFound){
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter a letter");
-            String playerGuess = sc.nextLine();System.out.println();
+            String playerGuess = sc.nextLine();
+            System.out.println();
 
             isGuessCorrect(playerGuess);
             updateLettersGuessed(playerGuess);
